@@ -15,7 +15,7 @@ public:
 		heights.insert(heights.begin(), -1);
 		heights.push_back(-1);
 		
-        bar arr[n+5];
+        	bar arr[n+5];
         
 		vector <int> tmp;
 	 
