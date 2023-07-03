@@ -41,6 +41,12 @@ struct disjoint_set{
 		}
 	}
 	
+	void undo(){
+		pii tmp = s.top(); s.pop();
+		table[tmp.cd] = tmp.cd;
+		sz[tmp.fa] -= sz[tmp.cd];
+	}
+	
 	bool same(int i, int j){
 		return (find(i) == find(j));
 	}
@@ -49,12 +55,6 @@ struct disjoint_set{
 		for (int i=1; i<=n; i++){
 			cout << i << " 的代表元素為 " << find(i) << "\n";
 		}
-	}
-	
-	void undo(){
-		pii tmp = s.top(); s.pop();
-		table[tmp.cd] = tmp.cd;
-		sz[tmp.fa] -= sz[tmp.cd];
 	}
 }sample;
 
