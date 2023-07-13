@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#define SalAC ios_base::sync_with_stdio(false); cin.tie(0);
 #define t stk.top
 using namespace std;
 
@@ -23,8 +24,7 @@ bool ismatch(string s){
 }
 
 int main(){
-	ios_base::sync_with_stdio(false);
-	cin.tie(nullptr);
+	SalAC;
 	
 	string s;
 	while (cin >> s){
